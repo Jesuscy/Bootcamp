@@ -22,7 +22,7 @@
     background-color:rgb(247, 247, 228);
     align-items: center;
     list-style: none;
-    margin-top: 60px;
+    margin-top: 40px;
     padding-top: 3px;
     padding-bottom: 6px;
     text-align: center;
@@ -38,10 +38,4 @@
 
 #presentacion{
     font-weight: 600;
-}
-
-#infoContacto{
-    
-    
-
 }
