@@ -4,8 +4,9 @@
     margin: auto;
     font-family: 'Roboto', sans-serif;
     font-weight: 150;
-    background-color: rgb(63, 93, 105);
-    color: aliceblue;
+    font-size: 120%;
+    background-color: rgb(62, 91, 102);
+    color: beige;
     padding: 30px;
     border-radius: 15px;
     transition: transform 0.1s ease-in-out;
@@ -17,8 +18,8 @@
 }
 
 .cv-content {
-    border-radius: 8px;
-    background-color: rgb(216, 216, 216);
+    border-radius: 16px;
+    background-color:rgb(247, 247, 228);
     align-items: center;
     list-style: none;
     margin-top: 60px;
@@ -33,4 +34,14 @@
 
 .cv-content:hover{
     transform: scale(1.01);
+}
+
+#presentacion{
+    font-weight: 600;
+}
+
+#infoContacto{
+    
+    
+
 }
