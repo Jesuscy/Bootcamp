@@ -1,7 +1,28 @@
-.cv-content{
-    
-    border-radius: 8px; 
+.cv {
+
+    width: 800px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(57, 51, 51);
+    color: aliceblue;
+    padding: 30px;
+    border-radius: 15px;
+
+}
+
+.cv-content {
+
+    border-radius: 8px;
     background-color: rgb(76, 76, 76);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     align-items: center;
+    list-style: none;
+    margin-top: 60px;
+    padding: 1px;
+    text-align: center;
+    transition: transform 0.1s ease-in-out;
+}
+
+
+.cv-content:hover{
+    transform: scale(1.01);
 }
