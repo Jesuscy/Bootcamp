@@ -2,37 +2,37 @@
 
 .container{
     width: 100%;
-    background-color: rgb(136, 156, 173);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    background-color: aqua;
+    height: 500px;
 
 }
 .titulo{
     text-align: center;
     font-size: 40px;
+    background-color: rgb(117, 117, 117);
 }
 
 .columna{
-    background-color:rgb(187, 126, 45);
-    font-weight: 500;
+    background-color:rgb(224, 212, 212);
+    font-weight: 500; 
+    padding:5px;
+    margin: 20px;
 
 }
 .uno{
     display: flex;
     flex-direction: row;
-    background-color: rgb(42, 106, 165);
     height: 300px;
 }
 
 .dos{
-    background-color: rgb(0, 217, 255);
     display: flex;
     flex-direction: column;
     height: 300px;
 
 }
 .tres{
-    background-color: rgb(13, 83, 78);
     height: 300px;
 
 }
