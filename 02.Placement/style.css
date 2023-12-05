@@ -1,0 +1,38 @@
+
+.container{
+    height: 600px;
+    width: 600px;
+    border: 2px solid black;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+
+}
+.square {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+
+}
+
+.red {
+    background-color: red;
+
+}
+
+.blue {
+    background-color: blue;
+
+}
+
+.pink {
+    background-color: pink;
+}
+
+.green {
+    background-color: green;
+}
