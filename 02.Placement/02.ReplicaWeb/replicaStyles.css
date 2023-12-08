@@ -14,7 +14,7 @@
 }
 
 .NavIzq a {
-    margin-right: 300px;
+    margin-right: 60px;
     align-items: center;
     font-weight: 600;
     font-size: x-large;
@@ -37,7 +37,7 @@
 .BarNavContent input {
     border-radius: 6px;
     border: none;
-    margin-right: 300px;
+    margin-right: 200px;
     margin-bottom: 10px;
     background-color: rgba(172, 172, 172, 0.555);
     height: 40px;
