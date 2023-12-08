@@ -10,11 +10,11 @@
     padding-right: 20px;
     border-radius: 6px;
     align-items: center;
-    background-color: rgba(233, 233, 233, 0.712);
+    background-color: rgba(9, 179, 179, 0.712);
 }
 
 .NavIzq a {
-    margin-right: 60px;
+    margin-right: 100px;
     align-items: center;
     font-weight: 600;
     font-size: x-large;
@@ -61,9 +61,13 @@
 
 }
 
+.BarNavContent a:hover{
+    color: rgb(33, 69, 179);
+}
+
 .contactoIcon {
     margin-top: 10px;
-    margin-left: 350px;
+    margin-left: 600px;
 
 }
 
@@ -114,6 +118,7 @@ a:visited {
     font-weight: 600;
 }
 
+
 .index-content a{
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -121,6 +126,14 @@ a:visited {
     color: rgb(111, 107, 107);
 
 }
+.index-content a:hover{
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    color: rgb(33, 69, 179);
+
+}
+
 .separator{
     width: 60%;
     margin-top: 40px;
@@ -135,8 +148,9 @@ a:visited {
 
 /*Sección estilos content-colummn*/
 .center{
-    background-color: rgb(247, 246, 246);
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(231, 229, 229);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:"Cascadia";
     margin-left: 100px;
     margin-right: 100px;
     height: 900px;
@@ -169,9 +183,111 @@ a:visited {
 
 /*Sección estilos info-colummn*/
 .info {
-    background-color: rgba(233, 233, 233, 0.712);
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(230, 230, 230, 0.712);
     width: 20%;
+    display: flex;
+    flex-direction: column;
+    
 }
+
+
+.info-content{
+    text-align: left;
+    margin-top: 6px;
+    margin-left: 80px;
+    color: rgb(111, 107, 107);
+    font-weight: 600;
+}
+
+.info-content a{
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    color: rgb(111, 107, 107);
+}
+
+.info-content a:hover{
+    color: rgb(33, 69, 179);
+
+}
+
+.info-content-buttons{
+    border-radius: 12px;
+    background-color: rgba(158, 158, 158, 0.712);
+    padding: 10px;
+}
+
+.info-top{
+    margin-top: 65px;
+    color: rgb(51, 51, 51) !important;
+    font-size: 20px !important;
+}
+
+.info-stickers-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-stickers{
+    background-color: rgb(158, 158, 158);
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 30px;
+    min-height: 85px;
+    min-width: 40%;    
+    max-height: 85px;
+    max-width: 40%; 
+    display: block;
+
+    transition: transform 0.1s ease-in-out;
+ 
+}
+
+.info-stickers:hover{
+    background-color: rgba(49, 117, 117, 0.753);
+    transform: scale(1.05);
+
+}
+
+.info-stickers-content{
+    margin: 20px auto;
+    text-align: center;
+    padding: 5px;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.info-double-stickers{
+    background-color: rgba(158, 158, 158, 0.849);
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 30px;
+    min-height: 110px;
+    min-width: 89%;    
+    max-height: 85px;
+    max-width: 90%; 
+    display: block;
+    transition: transform 0.1s ease-in-out;
+}
+.info-double-stickers:hover{
+    background-color: rgba(49, 117, 117, 0.753);
+    transform: scale(1.05);
+
+}
+.info-double-stickers-content{
+    margin: 40px auto;
+    text-align: center;
+    padding: 5px;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+
+
+
 
 /*Fin sección estilos info-colummn*/
 
