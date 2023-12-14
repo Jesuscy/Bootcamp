@@ -1,0 +1,117 @@
+.esp{
+    margin: auto;
+}
+.espbloc1{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left:100px;
+    border-radius: 50%;
+    z-index: '0';
+}
+.espbloc2{
+    background-color: yellow;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    left:25px;
+    top: 25px;
+    border-radius: 50%;
+    z-index: '-1';
+
+}
+.espbloc3{
+    
+    background-color: red;
+    height: 75px;
+    width: 75px;
+    position: relative;
+    left: 40px;
+    top: 40px;
+    border-radius: 50%;
+    z-index: '-2';
+
+}
+.arg{
+    margin: 50px auto;
+}
+.argbloc1{
+    background-color: rgb(96, 200, 248);
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left:100px;
+    border-radius: 50%;
+    z-index: '0';
+}
+.argbloc2{
+    background-color: rgb(250, 253, 229);
+    height: 150px;
+    width: 150px;
+    position: relative;
+    left:25px;
+    top: 25px;
+    border-radius: 50%;
+    z-index: '-1';
+   
+}
+.argbloc3{
+     
+    background-color: rgb(96, 200, 248);
+    height: 75px;
+    width: 75px;
+    position: relative;
+    left: 40px;
+    top: 40px;
+    border-radius: 50%;
+    z-index: '-2';
+
+    
+}
+.ita{
+    margin: auto;
+}
+.itabloc1{
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left:100px;
+    border-radius: 50%;
+    z-index: '0';
+}
+.itabloc2{
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    left:25px;
+    top: 25px;
+    border-radius: 50%;
+    z-index: '-1';
+   
+}
+.itabloc3{
+    background-color: red;
+    height: 75px;
+    width: 75px;
+    position: relative;
+    left: 40px;
+    top: 40px;
+    border-radius: 50%;
+    z-index: '-2';
+
+}
+.fra{
+    margin: auto;
+}
+.frablo1{
+    background-color: blue;
+}
+frabloc2{   
+    background-color: white;
+}
+frabloc3{
+    background-color: red;
+}
