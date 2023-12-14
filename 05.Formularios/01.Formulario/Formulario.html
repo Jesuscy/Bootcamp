@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="FormularioStyle.css">
+</head>
+
+<body style="background-color: rgba(25, 13, 71, 0.767);">
+    <form target="#">
+        <div class="container">
+            <div class="input-container">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" class="input-styles" name="nombre">
+            </div>
+            <div class="input-container">
+                <label for="apellido1">Primer Apellido:</label><br>
+                <input type="text" id="apellido1" class="input-styles" name="apellido1">
+            </div>
+            <div class="input-container">
+                <label for="apellido2">Segundo Apellido:</label><br>
+                <input type="text" id="apellido2" class="input-styles" name="apellido2">
+            </div>
+            <div class="input-container">
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" class="input-styles" name="email">
+            </div>
+            <div class="input-container">
+                <label for="telefono">Teléfono:</label><br>
+                <input type="tel" id="telefono" class="input-styles" name="telefono">
+            </div>
+            <div class="input-container">
+                <label>Mayoría de Edad:</label><br>
+                <label for="mayor"> Sí</label>
+                <input type="radio" id="mayor" class="input-styles" value="Si" name="mayor">
+                <label for="mayor"> No</label>
+                <input type="radio" id="mayor" class="input-styles" value="No" name="mayor">
+
+            </div>
+            <div class="btn input-container">
+                <input type="submit" value="Enviar" onclick="checkForm()">
+
+            </div>
+
+        </div>
+        <script>
+
+            function checkForm() {
+    
+                const nombre = document.querySelector('#nombre');
+    
+                const apellido1 = document.querySelector('#apellido1');
+    
+                const apellido2 = document.querySelector('#apellido2');
+    
+                const email = document.querySelector('#email');
+    
+                const telefono = document.querySelector('#nombre');
+    
+                const mayor = document.querySelector('#nombre');
+    
+    
+    
+                if (nombre.value !== "" && apellido1.value !== "" && apellido2.value !== "" && email.value !== "" && telefono.value !== "" && mayor.value) {
+    
+                    alert('es correcto');
+    
+                } else {
+    
+                    alert('error');
+    
+                }
+    
+            }
+    
+        </script>
+    </form>
+   
+</body>
+
+</html>

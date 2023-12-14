@@ -1,0 +1,35 @@
+.container{
+    background-color: rgb(58, 55, 55);
+    max-width:400px;
+    max-height:400px;
+    margin: 100px auto;
+    border-radius: 6px;
+    padding: 15px;
+    font-family:monospace;
+    color: rgb(183, 207, 207);
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+.input-container{
+    margin-top:8px;
+    margin-left:40px;
+}
+.input-container input{
+    background-color: rgba(76, 115, 141, 0.438);
+    border-radius: 2px;
+    border-style: none;
+    color: aliceblue;
+    font-size: 10px;
+}
+.btn{
+    border-radius: 2px
+    
+}
+
+.btn:hover{ 
+    background-color: rgba(0, 0, 172, 0.37);
+    border-radius: 2px;
+
+}
+
