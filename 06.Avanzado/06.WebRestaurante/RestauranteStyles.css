@@ -1,4 +1,4 @@
-.topBarNav{
+.topBarNav {
     background-color: rgb(44, 43, 43);
     height: 90px;
     width: 99%;
@@ -9,35 +9,37 @@
     border-radius: 10px;
 }
 
-.topBarNav-img{
+.topBarNav-img {
     margin-top: 2px;
     margin-left: 50px;
     overflow: hidden;
 
 }
-.topBarNav-img img{
+
+.topBarNav-img img {
     border-radius: 6px;
 }
 
-.topBarNav-content{
+.topBarNav-content {
     margin: auto;
     margin-left: 250px;
     color: wheat;
 }
-.topBarNav-content a{
+
+.topBarNav-content a {
     color: wheat;
     margin: 30px;
     text-decoration: none;
 
 }
 
-.body-container{
+.body-container {
     margin: auto;
     text-align: center;
     align-items: center;
 }
 
-.body-container-content{
+.body-container-content {
     font-size: 20px;
     color: blueviolet;
     margin: 300px auto;
@@ -47,7 +49,7 @@
 /*SECCIÓN CONCEPTO*/
 
 
-.concept-container{
+.concept-container {
     margin: 120px auto;
     background-color: rgb(41, 39, 39);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -60,26 +62,31 @@
 
 
 }
-.concept-header{
+
+.concept-header {
     font-size: 30px;
     font-weight: 400;
     display: flex;
     justify-content: center;
 }
-.concept-header-content{
+
+.concept-header-content {
     margin-left: 10px;
     margin-right: 10px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+
 }
 
-.concept-separator{ 
+.concept-separator {
     margin-top: 18px;
     background-color: aliceblue;
     height: 2px;
     width: 25%;
 }
-.concept-content{
-    
+
+.concept-content {
+
     font-size: 20px;
 
 }
@@ -87,29 +94,30 @@
 
 /*SECCION IMAGENES*/
 
-.container-img{
-    margin:40px auto;
+.container-img {
+    margin: 40px auto;
     max-height: 1600px;
     max-width: 1400px;
     display: flex;
     flex-wrap: wrap;
 }
 
-.colum-img{
+.colum-img {
     width: 30%;
     margin: 20px;
     display: flex;
     flex-direction: column;
 }
 
-.img1{
+.img1 {
     margin: 55px;
     height: 400px;
     width: 350px;
 
 
 }
-.img2{
+
+.img2 {
     margin: 30px;
     height: 300px;
     width: 400px;
@@ -122,7 +130,7 @@
 
 
 
-.carta-header{
+.carta-header {
     font-size: 30px;
     font-weight: 400;
     display: flex;
@@ -131,19 +139,20 @@
     margin-top: 40px;
 
 }
-.carta-header-content{
+
+.carta-header-content {
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.carta-separator{ 
+.carta-separator {
     margin-top: 18px;
     background-color: rgb(29, 30, 31);
     height: 2px;
     width: 25%;
 }
 
-.carta-container{
+.carta-container {
     font-family: 'DM Sans', sans-serif;
     font-size: 20px;
     margin: 10px auto;
@@ -153,12 +162,13 @@
     display: flex;
     background-image: url(img/images.jpg);
     flex-wrap: wrap;
-    
-    
+
+
 }
-.colum{
+
+.colum {
     padding: 20px;
-    margin:auto;
+    margin: auto;
     width: 43%;
     height: 90%;
     display: flex;
@@ -168,24 +178,25 @@
 
 }
 
-.categorias-plato{
+.categorias-plato {
     margin: auto;
     margin-right: 300px;
     margin-left: 30px;
 }
 
-.plato{
+.plato {
     height: 5%;
     width: 60%;
     border-radius: 6px;
     background-color: rgba(235, 231, 231, 0.473);
     padding-top: 10px;
     padding-left: 10px;
-    
-    
+
+
 
 }
-.precio{
+
+.precio {
     margin-left: 40px;
     height: 5%;
     width: 30%;
@@ -198,7 +209,7 @@
 
 /*SECCION RESERVAS*/
 
-.reserva-header{
+.reserva-header {
     margin-left: 500px;
     margin-top: 40px;
     display: flex;
@@ -206,27 +217,28 @@
 
 
 }
-.reserva-header-content{
+
+.reserva-header-content {
     font-size: 24px;
     color: aliceblue;
-    
+
 
 
 }
 
-.reserva-separator{ 
-    margin:12px;
+.reserva-separator {
+    margin: 12px;
     background-color: rgb(204, 158, 88);
     height: 2px;
     width: 25%;
 }
 
 
-.reserva-container{
+.reserva-container {
     display: flex;
 }
 
-.reserva-input-container{
+.reserva-input-container {
     margin-left: 350px;
     margin-top: 80px;
     width: 65vb;
@@ -234,22 +246,24 @@
     flex-wrap: wrap;
 }
 
-.reserva-input-container-content{
-    margin:10px;   
+.reserva-input-container-content {
+    margin: 10px;
     font-family: 'DM Sans', sans-serif;
     display: flex;
     flex-wrap: wrap;
 }
 
-.input-container{
+.input-container {
     margin: 20px;
     height: 15%;
 }
-.input-container label{
+
+.input-container label {
     color: aliceblue;
     font-weight: 600;
 }
-.small-input-reserva-style{
+
+.small-input-reserva-style {
     width: 250px;
     height: 40px;
     color: rgb(129, 129, 129);
@@ -257,7 +271,8 @@
     font-size: 16px;
 
 }
-.large-input-reserva-style{
+
+.large-input-reserva-style {
     width: 550px;
     height: 40px;
     color: rgb(129, 129, 129);
@@ -266,20 +281,20 @@
 
 }
 
-.reserva-restaurante-info{
+.reserva-restaurante-info {
     margin-top: 8vh;
     width: 40vh;
     padding: 10px;
 }
-.reserva-restaurante-info-head{
+
+.reserva-restaurante-info-head {
     font-size: 40px;
     font-family: 'DM Sans', sans-serif;
     font-weight: 600;
     color: rgb(231, 150, 45)
-
-    
 }
-.reserva-restaurante-info-subhead{
+
+.reserva-restaurante-info-subhead {
     font-size: 36px;
     font-family: 'DM Sans', sans-serif;
     font-weight: 600;
@@ -288,18 +303,119 @@
     flex-direction: column;
 }
 
-.reserva-restaurante-info-content{
+.reserva-restaurante-info-content {
     font-size: 16px;
     font-family: 'DM Sans', sans-serif;
     font-family: 'Kanit', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto Mono', monospace;
-        color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     font-weight: 100;
     width: 200px
 }
 
+/*SECCION BLOG*/
+.blog-header {
+    margin-left: 57vh;
+    margin-top: 3vb;
+    display: flex;
 
+
+
+}
+
+.blog-header-content {
+    font-size: 24px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    color: rgb(33, 34, 34);
+
+
+
+}
+
+.blog-separator {
+    margin: 12px;
+    background-color: rgb(204, 158, 88);
+    height: 2px;
+    width: 25%;
+}
+
+.blog-container {
+    margin: 40px auto;
+    display: flex;
+    width: 180vb;
+    height: 75vh;
+    align-items: center;
+
+}
+
+.blog-img-colum {
+    align-content: center;
+    width: 30%;
+    height: 80%;
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+
+}
+.blog-img-colum-center{
+    margin: auto;
+    width: 70%;
+}
+.blog-img-colum-center-content{
+    font-size: 36px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+
+}
+
+.blog-mozza-label {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 22%;
+    border:2px;
+    border-style: solid;
+    border-color: aliceblue;
+
+
+}
+
+.blog-mozza-label-content {
+    margin-left: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.blog-entradas-container{
+    align-items: center;
+}
+.blog-entradas{
+    margin: auto;
+    background-color: rgb(187, 152, 57);
+    padding: 3px;
+    width: 20%;
+    height: 60px
+}
+.blog-entradas-container :hover{
+    background-color: rgb(151, 126, 56);
+}
+.blog-entradas-content{
+    margin-top: 20px;
+    text-align: center ;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+   
+
+}
+
+
+
+/*SECCION CONTACTO*/
 
 
 
