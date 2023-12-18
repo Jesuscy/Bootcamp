@@ -119,46 +119,64 @@
 
 /*SECCION MENÚ*/
 .carta-header{
-    margin: auto;
-    border-radius: 6px;
-    font-family: 'Roboto Mono', monospace;
-    width: 60vw;
-    text-align: center;
-    background-color: rgb(87, 78, 78);
-    color: aliceblue;
-    font-size: 24px;
+    font-size: 30px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
 
 }
+.carta-header-content{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.carta-separator{ 
+    margin-top: 18px;
+    background-color: rgb(29, 30, 31);
+    height: 2px;
+    width: 25%;
+}
+
 .carta-container{
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'DM Sans', sans-serif;
     font-size: 20px;
     margin: 10px auto;
-    height: 95vh;
-    width: 60vw;
-    background-color: rgb(231, 231, 231);
+    height: 90vh;
+    width: 70vw;
     border-radius: 12px;
     display: flex;
+    background-image: url(img/images.jpg);
+    flex-wrap: wrap;
+    
     
 }
 .colum{
     padding: 20px;
     margin:auto;
-    width: 40%;
-    height: 80%;
+    width: 43%;
+    height: 90%;
     display: flex;
     flex-wrap: wrap;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+
 }
 
 .categorias-plato{
-    margin:30px;
+    margin: auto;
+    margin-right: 300px;
+    margin-left: 30px;
 }
+
 .plato{
     height: 5%;
     width: 60%;
-    background-color: rgba(191, 196, 196, 0.664);
     border-radius: 6px;
+    background-color: rgba(235, 231, 231, 0.473);
     padding-top: 10px;
-    text-align: center;
+    padding-left: 10px;
     
     
 
@@ -167,8 +185,8 @@
     margin-left: 40px;
     height: 5%;
     width: 30%;
-    background-color: rgb(111, 139, 139);
     border-radius: 6px;
+    background-color: rgba(97, 124, 115, 0.356);
     padding-top: 10px;
     text-align: center;
 
@@ -176,3 +194,4 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Open+Sans:ital,wght@1,300&family=Roboto+Mono&display=swap');
