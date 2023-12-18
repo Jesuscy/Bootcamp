@@ -69,6 +69,7 @@
 .concept-header-content{
     margin-left: 10px;
     margin-right: 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .concept-separator{ 
@@ -118,6 +119,9 @@
 
 
 /*SECCION MENÚ*/
+
+
+
 .carta-header{
     font-size: 30px;
     font-weight: 400;
@@ -192,6 +196,114 @@
 
 }
 
+/*SECCION RESERVAS*/
+
+.reserva-header{
+    margin-left: 500px;
+    margin-top: 40px;
+    display: flex;
+
+
+
+}
+.reserva-header-content{
+    font-size: 24px;
+    color: aliceblue;
+    
+
+
+}
+
+.reserva-separator{ 
+    margin:12px;
+    background-color: rgb(204, 158, 88);
+    height: 2px;
+    width: 25%;
+}
+
+
+.reserva-container{
+    display: flex;
+}
+
+.reserva-input-container{
+    margin-left: 350px;
+    margin-top: 80px;
+    width: 65vb;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reserva-input-container-content{
+    margin:10px;   
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-container{
+    margin: 20px;
+    height: 15%;
+}
+.input-container label{
+    color: aliceblue;
+    font-weight: 600;
+}
+.small-input-reserva-style{
+    width: 250px;
+    height: 40px;
+    color: rgb(129, 129, 129);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+
+}
+.large-input-reserva-style{
+    width: 550px;
+    height: 40px;
+    color: rgb(129, 129, 129);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+
+}
+
+.reserva-restaurante-info{
+    margin-top: 8vh;
+    width: 40vh;
+    padding: 10px;
+}
+.reserva-restaurante-info-head{
+    font-size: 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    color: rgb(231, 150, 45)
+
+    
+}
+.reserva-restaurante-info-subhead{
+    font-size: 36px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.reserva-restaurante-info-content{
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+        color: rgb(255, 255, 255);
+    font-weight: 100;
+    width: 200px
+}
+
+
+
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Open+Sans:ital,wght@1,300&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Kanit:wght@300&family=Open+Sans:ital,wght@1,300&family=Roboto+Mono&display=swap');
