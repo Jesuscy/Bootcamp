@@ -1,0 +1,45 @@
+
+.header-container{
+    display: flex;
+    width: 200vb;
+    height: 10vh;
+    background-color: brown;
+    
+}
+
+.header-izq{
+    margin-left: 0px;
+    width: 20%;
+    height: 100%;
+    background-color: aqua;
+}
+.header-izq-content{
+
+}
+
+.header-center{
+    margin: auto;
+    width: 20%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.header-center-content{
+    margin-top: 24px;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+}
+.header-der{
+    margin-right: 0px;
+    width: 20%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.header-der-content{
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Kanit:wght@300&family=Open+Sans:ital,wght@1,300&family=Roboto+Mono&display=swap');
