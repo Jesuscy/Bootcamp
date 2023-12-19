@@ -1,0 +1,94 @@
+.container {
+    margin: 150px auto;
+    display: flex;
+    width: 110vb;
+    height: 60vh;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.img-colum {
+
+    height: 60%;
+    width: 40%;
+    background-image:url(img/Captura.PNG);}
+
+.input-colum {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Sarabun', sans-serif;
+
+}
+
+.input-colum-header{
+    height: 30%;
+    width: 100%;
+
+}
+
+.input-colum-header-content{
+    font-family: 'Sarabun', sans-serif;
+}
+
+.input-colum-header-content-title{
+    margin-left: 10px;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.input-colum-header-content-subtitle{
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.input-colum-body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.input-colum-body-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.input-colum-body-content-input{
+    margin: 40px auto;
+    height: 20px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.input-colum-body-content-input input{
+    height: 40px;
+    width: 90%;
+    border: 1px;
+    border-radius: 4px;
+    border-color: rgb(190, 190, 190);
+    border-style: solid;
+}
+
+.input-colum-body-content-input-submit{
+    margin: 40px auto;
+    height: 20px;
+    width: 100%;
+}
+
+.input-colum-body-content-input-submit input{
+    height: 40px;
+    width: 30%;
+    font-size: 20px;
+    border: 2px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(245, 177, 121);
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Kanit:wght@300&family=Open+Sans:ital,wght@1,300&family=Roboto+Mono&family=Sarabun&display=swap');
