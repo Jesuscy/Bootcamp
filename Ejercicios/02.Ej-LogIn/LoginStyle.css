@@ -12,7 +12,8 @@
 
     height: 60%;
     width: 40%;
-    background-image:url(img/Captura.PNG);}
+    background-image: url(img/Captura.PNG);
+}
 
 .input-colum {
     height: 100%;
@@ -23,71 +24,104 @@
 
 }
 
-.input-colum-header{
+.input-colum-header {
     height: 30%;
     width: 100%;
-
+    color: rgb(54, 54, 54);
 }
 
-.input-colum-header-content{
+.input-colum-header-content {
     font-family: 'Sarabun', sans-serif;
 }
 
-.input-colum-header-content-title{
+.input-colum-header-content-title {
     margin-left: 10px;
     font-size: 50px;
     font-weight: 400;
 }
 
-.input-colum-header-content-subtitle{
+.input-colum-header-content-subtitle {
     margin-left: 10px;
     margin-top: 15px;
     font-size: 18px;
 }
 
-.input-colum-body{
+.input-colum-body {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
 }
-.input-colum-body-content{
+
+.input-colum-body-content {
     width: 100%;
     display: flex;
     flex-direction: column;
-    
+    color: rgb(85, 85, 85);
+
 }
-.input-colum-body-content-input{
+
+.input-colum-body-input-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-colum-body-content-input {
     margin: 40px auto;
     height: 20px;
     width: 100%;
     margin-left: 10px;
 }
 
-.input-colum-body-content-input input{
+.input-colum-body-content-input input {
     height: 40px;
     width: 90%;
     border: 1px;
     border-radius: 4px;
     border-color: rgb(190, 190, 190);
     border-style: solid;
+    font-size: 16px;
+    padding-left: 10px;
+
 }
 
-.input-colum-body-content-input-submit{
-    margin: 40px auto;
+.input-colum-body-content-input-submit {
+    margin-top: 35px;
     height: 20px;
-    width: 100%;
+    width: 25%;
+    margin-left: 10px;
+    margin-right: 80px;
 }
 
-.input-colum-body-content-input-submit input{
+.input-colum-body-content-input-submit :hover {
+    background-color: antiquewhite;
+
+}
+
+.input-colum-body-content-input-submit input {
     height: 40px;
-    width: 30%;
+    width: 100%;
     font-size: 20px;
     border: 2px;
-    border-radius: 10px;
+    border-radius: 6px;
     border-style: solid;
     border-color: rgb(245, 177, 121);
 }
+
+.input-colum-body-content-input-submit-check {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+
+.input-colum-body-content-input-submit-check input {
+    margin-top: 20px;
+    margin-right: 10px;
+    height: 30px;
+    width: 30px
+}
+
 
 
 
