@@ -1,6 +1,6 @@
 .header-container {
     display: flex;
-    width: 200vb;
+    width: 100%;
     height: 10vh;
 
 }
@@ -80,6 +80,54 @@
     margin-left: 2%;
     display: flex;
 
+}
+
+.container{
+    margin: auto;
+    width: 175vb;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.colum{
+    display: flex;
+    flex-direction: column;
+    margin: 2% auto;
+    min-width: 22%;
+    max-width: 22%;
+    min-height: 500px;
+    font-family: 'Kanit', sans-serif;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 4px 4px 4px rgb(196, 195, 195);
+
+}
+
+.colum:hover{
+    transform: scale(1.1);
+}
+
+.colum-img{
+    width: 100%;
+    height: 90%;
+    background-color: red;
+    
+}
+.colum-img img{
+    width: 100%;
+    height: 100%;
+}
+.colum-descripcion{
+    margin: 10px auto;
+    text-align: center;
+    
+}
+.colum-descripcion a{
+    color: black;
+    text-decoration: none;
+}
+.colum-precio{
+    text-align: center;
+    padding: 3px
 }
 
 
