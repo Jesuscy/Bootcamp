@@ -31,7 +31,7 @@
 }
 
 .header-izq-content-submenu:hover {
-    transition: 300ms;
+    transition: 200ms;
     font-size: 16px;
     color: black;
 }
@@ -69,12 +69,13 @@
     border-color: black;
     font-size: 14px;
     padding-top: 12px;
+    padding-left: 20px;
     font-weight: 600;    
+    background-color: rgba(226, 226, 226, 0);
 }
 
 .header-der-content input::placeholder {
     color: black;
-    padding: 10px;
 }
 .header-der-content-btn{
     margin-left: 2%;
