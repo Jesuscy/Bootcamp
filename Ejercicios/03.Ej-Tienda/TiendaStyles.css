@@ -1,45 +1,86 @@
-
-.header-container{
+.header-container {
     display: flex;
     width: 200vb;
     height: 10vh;
-    background-color: brown;
-    
+
 }
 
-.header-izq{
+.header-izq {
     margin-left: 0px;
     width: 20%;
     height: 100%;
-    background-color: aqua;
-}
-.header-izq-content{
-
+    display: flex;
+    flex-direction: column;
 }
 
-.header-center{
+.header-izq-content {
+    margin-top: 10%;
+    margin-left: 10%;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header-izq-content-submenu {
+    margin-top: 2%;
+    margin-left: 10%;
+    font-family: 'Kanit', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(66, 66, 66);
+}
+
+.header-izq-content-submenu:hover {
+    transition: 300ms;
+    font-size: 16px;
+    color: black;
+}
+
+.header-center {
     margin: auto;
     width: 20%;
     height: 100%;
-    background-color: aqua;
 }
 
-.header-center-content{
-    margin-top: 24px;
+.header-center-content {
+    margin-top: 8%;
     text-align: center;
     font-family: 'Kanit', sans-serif;
     font-size: 36px;
     font-weight: 600;
 }
-.header-der{
+
+.header-der {
     margin-right: 0px;
     width: 20%;
     height: 100%;
-    background-color: aqua;
 }
 
-.header-der-content{
-    
+.header-der-content {
+    margin-top: 10%;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
 }
+
+.header-der-content input {
+    max-height:25px;
+    border-style: none;
+    border-bottom-style: solid;
+    border-color: black;
+    font-size: 14px;
+    padding-top: 12px;
+    font-weight: 600;    
+}
+
+.header-der-content input::placeholder {
+    color: black;
+    padding: 10px;
+}
+.header-der-content-btn{
+    margin-left: 2%;
+    display: flex;
+
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Kanit:wght@300&family=Open+Sans:ital,wght@1,300&family=Roboto+Mono&display=swap');
