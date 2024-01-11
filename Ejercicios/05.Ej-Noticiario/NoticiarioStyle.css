@@ -1,0 +1,14 @@
+.container{
+    margin: 0 auto;
+    max-width: 667px;
+}
+.featured{
+    min-width: 98%;
+    background-color: red;
+
+}
+.main-img{
+    background-image: url(img/BMW700.webp);
+    background-position: center;
+
+}

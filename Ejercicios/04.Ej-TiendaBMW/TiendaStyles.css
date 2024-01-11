@@ -13,10 +13,10 @@
     display: flex;
     flex-wrap: wrap;
     width: 90%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Kanit', sans-serif;
     font-size: 12px;
     font-weight: 600;
-    color: rgb(236, 236, 236);
+    color: rgb(255, 255, 255);
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
@@ -161,14 +161,14 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 2%;
+    margin-top: 100px;
+    margin-right:40px;
     width: 20%;
     height: 40%;
     transition: transform 0.3s ease; /* Agregamos una transición suave */
 }
 .catalogo-body-content:hover{
     transform: scale(1.1); /* Escalamos el div al 110% */
-
 }
 .catalogo-img{
     display: flex;
