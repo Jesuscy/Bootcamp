@@ -5,8 +5,8 @@
  */
 
     function mediaRango(lista, indice1, indice2){
-        var lista2 = lista.slice(indice1,indice2);
-        var total = 0;
+        let lista2 = lista.slice(indice1,indice2);
+        let total = 0;
         if(lista2.length === 0){
             console.log(`La media es ${total}`);
 
@@ -15,9 +15,9 @@
         for(num of lista2){
             total += num;   
         }
-        var media = total / lista2.length;
-        console.log(`La media es ${media}`);
+        let media = total / lista2.length;
+        return media;
     }
     }
-    var lista = [1,2,3,4,5];
-    mediaRango(lista, 1,4);
+    const lista = [1,2,3,4,5];
+    console.log(`La media es igual a ${mediaRango(lista, 1,4)}`);

@@ -76,3 +76,4 @@ const persona = {
     const media = total/arrayPersonas.length;
     console.log(`La media de edad es de ${media} anos`);
 // Fin parte 4
+
