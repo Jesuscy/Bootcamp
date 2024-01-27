@@ -1,3 +1,3 @@
 
-let newDiv = document.createElement('div');
+const newDiv = document.createElement('div');
 document.body.appendChild(newDiv);
