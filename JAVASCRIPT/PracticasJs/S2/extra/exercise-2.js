@@ -57,14 +57,14 @@ for (const user of users) {
 //Recorro el array de tonos.
 for (let i = 0; i < tonos.length; i++) {
     //Obtengo las repeticiones de cada tono.
-    const repeticiones = tonos.reduce((contador, elemento) => (elemento === tonos[i] ? contador + 1 : contador), 0);
+    const repeticiones = tonos.reduce((contador, elemento) => {elemento === tonos[i] ? contador + 1 : contador}, 0);
     //Obtengo el nombre del tono que se repite.
     var nombreTono = tonos[i];
     //Creo el objeto con la estructura {nombreTono:repeticiones}.
     const tonoFav = {};
     tonoFav[nombreTono] = repeticiones;
     //Busco dentro de tonosFavoritos si hay algun objeto con el valor de su clave[0] igual a la clave[0] de tonoFav que es nombreTono. 
-    const existeEnTonosFavoritos = tonosFavoritos.some(objeto => Object.keys(objeto)[0] === nombreTono);
+    const existeEnTonosFavoritos = tonosFavoritos.some(objeto => {Object.keys(objeto)[0] === nombreTono});
     //Si no existe lo añado al array de favoritos.
     if (!existeEnTonosFavoritos) {
         tonosFavoritos.push(tonoFav);
