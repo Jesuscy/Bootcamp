@@ -1,4 +1,7 @@
 {
     "oneDarkPro.bold": true,
-    "oneDarkPro.vivid": true
+    "oneDarkPro.vivid": true,
+    "editor.fontLigatures": true,
+    "editor.fontVariations": false,
+    "editor.fontWeight": "bold"
 }

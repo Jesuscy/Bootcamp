@@ -6,7 +6,7 @@ listaPokemon.className = 'poke-lista';
 //Async ya que espera a la respuesta del fetch.
 const getPokemons = async () =>{
     try{
-        const response = await fetch('https://pokeapi.co/api/v2/pokemon/')
+        const response = await fetch('https://pokeapi.co/api/v2/pokemon/?limit=150')
         const result = await response.json();
         console.log(result.results);
         return result.results;
@@ -29,6 +29,8 @@ const mapPokemons = async (pokemons) =>{
         const result  = await response.json();
         poke['img'] = result.sprites['front_default'];
         poke['id'] = result.id;
+        poke['weight'] = result.weight;
+        poke['height'] = result.height;
         poke['type'] = result.types.map((type) =>
             type.type.name).join(', ');
 
@@ -39,6 +41,38 @@ const mapPokemons = async (pokemons) =>{
 }
 
 const drawPokemons = async (pokemonsMapeados) =>{
+    
+    
+    for(let i = 0; i<=pokemonsMapeados.length; i++){
+        const div = document.createElement('div');
+        div.className = 'poke-div';
+        
+        const pokemonContentContainer = document.createElement('div');
+        pokemonContentContainer.className = 'poke-div-content';
+
+        const nombre = document.createElement('p');
+        nombre.textContent = pokemonsMapeados[i].nombre.toUpperCase();
+        pokemonContentContainer.appendChild(nombre);
+
+        const img = document.createElement('img');
+        img.setAttribute('src', pokemonsMapeados[i].img);
+        pokemonContentContainer.appendChild(img);
+
+        const tipo = document.createElement('p');
+        tipo.textContent = `Tipo ${pokemonsMapeados[i].type}`;
+        pokemonContentContainer.appendChild(tipo);
+        
+        div.appendChild(pokemonContentContainer);
+        listaPokemon.appendChild(div);
+
+        div.addEventListener('click', () =>{
+            drawPokemonDetails(pokemonsMapeados[i]);
+
+        });
+    }
+    
+    /*
+    SUSTITUIDO POR FOR(LET I), POR PROBLEMAS AL PASAR LA REFERENCIA DEL OBJETO A DRAWDETAILS.
     for(pokemon of pokemonsMapeados){
 
         const div = document.createElement('div');
@@ -48,7 +82,7 @@ const drawPokemons = async (pokemonsMapeados) =>{
         pokemonContentContainer.className = 'poke-div-content';
 
         const nombre = document.createElement('p');
-        nombre.textContent = pokemon.nombre.toUpperCase();;
+        nombre.textContent = pokemon.nombre.toUpperCase();
         pokemonContentContainer.appendChild(nombre);
 
         const img = document.createElement('img');
@@ -61,8 +95,18 @@ const drawPokemons = async (pokemonsMapeados) =>{
         
         div.appendChild(pokemonContentContainer);
         listaPokemon.appendChild(div);
-    }
 
+        div.addEventListener('click', () =>{
+            drawPokemonDetails(pokemon);
+
+        });
+    }
+*/
+
+}
+
+const drawPokemonDetails = async (pokemon) =>{
+    
 }
 
 
