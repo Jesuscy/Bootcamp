@@ -3,5 +3,6 @@
     "oneDarkPro.vivid": true,
     "editor.fontLigatures": true,
     "editor.fontVariations": false,
-    "editor.fontWeight": "bold"
+    "editor.fontWeight": "bold",
+    "liveServer.settings.port": 5501
 }

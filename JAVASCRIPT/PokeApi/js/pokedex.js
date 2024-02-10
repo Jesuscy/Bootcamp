@@ -67,8 +67,9 @@ const drawPokemons = async (pokemonsMapeados) =>{
 
         div.addEventListener('click', () =>{
             drawPokemonDetails(pokemonsMapeados[i]);
+            });
 
-        });
+        
     }
     
     /*
@@ -106,7 +107,67 @@ const drawPokemons = async (pokemonsMapeados) =>{
 }
 
 const drawPokemonDetails = async (pokemon) =>{
+
+    const pokeCardPopUp = document.createElement('div');
+    pokeCardPopUp.className = 'poke-card-popUp';
+    const pokeCard = document.createElement('div');
+    pokeCard.className = 'poke-card';
+   
+    //Nombre.
+    const pokeCardTitle = document.createElement('div');
+    pokeCardTitle.className = 'card-nombre'
+    const pokeTitle = document.createElement('h1');
+    pokeTitle.textContent = pokemon.nombre;
+    pokeCardTitle.appendChild(pokeTitle);
+    pokeCard.appendChild(pokeCardTitle);
     
+    //Div para guardar img y info.
+    const pokeDetails =  document.createElement('div');
+    pokeDetails.className = 'card-details';
+    pokeCard.appendChild(pokeDetails);
+   
+    const pokeImg = document.createElement('div');
+    pokeImg.className= 'poke-card-img';
+    const img = document.createElement('img');
+    img.setAttribute('src', pokemon.img)
+    const pokeInfo =  document.createElement('div');
+    pokeInfo.className= 'poke-card-info';
+    pokeImg.appendChild(img);
+    pokeInfo.appendChild(pokeImg);
+
+    //Div pare rellenar info.
+    const pokeInfoHeight = document.createElement('div');
+    pokeInfoHeight.className ='poke-card-info-detail';
+    pokeInfoHeight.textContent = `Altura: ${pokemon.height}m`;
+
+    const pokeInfoWeight = document.createElement('div');
+    pokeInfoWeight.className ='poke-card-info-detail';
+    pokeInfoWeight.textContent = `Peso: ${pokemon.weight}Kg`;
+
+    const pokeInfoType = document.createElement('div');
+    pokeInfoType.className ='poke-card-info-detail';
+    pokeInfoType.textContent =`Tipo: ${pokemon.type}.`;
+
+    pokeInfo.appendChild(pokeInfoHeight);
+    pokeInfo.appendChild(pokeInfoWeight);
+    pokeInfo.appendChild(pokeInfoType);
+   
+    pokeDetails.appendChild(pokeInfo);
+    pokeDetails.appendChild(pokeImg);
+
+    pokeCardPopUp.appendChild(pokeCard)
+    listaPokemon.appendChild(pokeCardPopUp);
+    pokeCardPopUp.style.display = 'block';
+
+    window.addEventListener('click', (event) => {
+        if (event.target === pokeCardPopUp) {
+            pokeCardPopUp.style.display = 'none';
+        }
+    });
+
+   
+    console.log(pokeCardPopUp);    
+
 }
 
 
