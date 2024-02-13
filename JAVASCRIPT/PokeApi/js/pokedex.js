@@ -8,7 +8,6 @@ const getPokemons = async () =>{
     try{
         const response = await fetch('https://pokeapi.co/api/v2/pokemon/?limit=150')
         const result = await response.json();
-        console.log(result.results);
         return result.results;
     }
     catch(error){
@@ -35,14 +34,12 @@ const mapPokemons = async (pokemons) =>{
             type.type.name).join(', ');
 
         }
-        console.log(pokemonMapeados)
     return pokemonMapeados;
 
 }
 
 const drawPokemons = async (pokemonsMapeados) =>{
-    
-    
+    //Recorro el bucle de pokemons mapeados para pintar los pokemons.
     for(let i = 0; i<=pokemonsMapeados.length; i++){
         const div = document.createElement('div');
         div.className = 'poke-div';
@@ -65,6 +62,7 @@ const drawPokemons = async (pokemonsMapeados) =>{
         div.appendChild(pokemonContentContainer);
         listaPokemon.appendChild(div);
 
+        //Añado un evento a cada div de pokemons para mostrar pintar el popUp. 
         div.addEventListener('click', () =>{
             drawPokemonDetails(pokemonsMapeados[i]);
             });
@@ -107,9 +105,10 @@ const drawPokemons = async (pokemonsMapeados) =>{
 }
 
 const drawPokemonDetails = async (pokemon) =>{
-
+    //Creo el popUp que contiene poke-card
     const pokeCardPopUp = document.createElement('div');
     pokeCardPopUp.className = 'poke-card-popUp';
+    //pokeCard es el container.
     const pokeCard = document.createElement('div');
     pokeCard.className = 'poke-card';
    
@@ -130,6 +129,7 @@ const drawPokemonDetails = async (pokemon) =>{
     pokeImg.className= 'poke-card-img';
     const img = document.createElement('img');
     img.setAttribute('src', pokemon.img)
+   
     const pokeInfo =  document.createElement('div');
     pokeInfo.className= 'poke-card-info';
     pokeImg.appendChild(img);
@@ -148,17 +148,21 @@ const drawPokemonDetails = async (pokemon) =>{
     pokeInfoType.className ='poke-card-info-detail';
     pokeInfoType.textContent =`Tipo: ${pokemon.type}.`;
 
+    //Añado la info a sus divs.
     pokeInfo.appendChild(pokeInfoHeight);
     pokeInfo.appendChild(pokeInfoWeight);
     pokeInfo.appendChild(pokeInfoType);
    
+    //Añado los detalles.
     pokeDetails.appendChild(pokeInfo);
     pokeDetails.appendChild(pokeImg);
 
+    //Añado todo al popUp.
     pokeCardPopUp.appendChild(pokeCard)
     listaPokemon.appendChild(pokeCardPopUp);
     pokeCardPopUp.style.display = 'block';
 
+    //Para de mostrar el popUp cuando clicka fuera.
     window.addEventListener('click', (event) => {
         if (event.target === pokeCardPopUp) {
             pokeCardPopUp.style.display = 'none';
@@ -166,7 +170,6 @@ const drawPokemonDetails = async (pokemon) =>{
     });
 
    
-    console.log(pokeCardPopUp);    
 
 }
 
@@ -177,8 +180,6 @@ const init = async () =>{
     const pokemons  = await getPokemons();
     const pokemonsMapeados = await mapPokemons(pokemons);
     const pokemonsDraw = await drawPokemons(pokemonsMapeados);
-
-    console.log(pokemonsMapeados);
 
 } 
 
