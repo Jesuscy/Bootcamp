@@ -116,7 +116,7 @@ const drawPokemonDetails = async (pokemon) =>{
     const pokeCardTitle = document.createElement('div');
     pokeCardTitle.className = 'card-nombre'
     const pokeTitle = document.createElement('h1');
-    pokeTitle.textContent = pokemon.nombre;
+    pokeTitle.textContent = pokemon.nombre.toUpperCase();
     pokeCardTitle.appendChild(pokeTitle);
     pokeCard.appendChild(pokeCardTitle);
     
