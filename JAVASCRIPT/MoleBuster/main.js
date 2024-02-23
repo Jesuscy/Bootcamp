@@ -52,6 +52,7 @@ function mostrarTopos() {
 
     //Obtengo un elemento hole aleatorio y le sumo la clase "up" que muestra el topo.
     const hole = document.getElementsByClassName(`hole${numeroAleatorio}`)[0];
+    //Si no contiene la clase up, se la añade.
     if(!hole.classList.contains("up")){
         hole.className += " up";
     }
@@ -61,19 +62,19 @@ function mostrarTopos() {
     function clickEventHandler(){
         if(clickado === true){
             console.log(clickado);
-            //Borra el topo, suma 1 al score y limpia el timeOut para que no ocurra si hace click.
+            //Borra el topo, suma 1 al score y limpia el setTimeOut para que no ocurra si hace click.
             bajarTopos(numeroAleatorio);
             score = score + 1;
             scorePane.textContent = score;
             this.removeEventListener("click",clickEventHandler);
-            clickado === false;
+            clickado = false;
         }
         else{
         //Borra el topo, elimina el evento.
-        console.log(clickado);
+        console.log(clickado + "Else setTimeOut");
         bajarTopos(numeroAleatorio);
         this.removeEventListener("click",clickEventHandler);
-
+        clickado = false;
     }
 }
     //Añado el evento al hole.
@@ -81,13 +82,14 @@ function mostrarTopos() {
 
     //setTimeOut para que pasado el tiempo en el que se muestra bajar el topo y quitarle el evento. 
     const timeOutId = setTimeout(() => {
-        clickado === false;
+        clickado = false;
         clickEventHandler();
+        console.log("SetTimeOut()");
     }, 10000);
 
 
 
-    /*   
+    /*
     setTimeout(() => {
         topoArriba = false;
 
